@@ -37,7 +37,19 @@ export AWS_ACCESS_KEY_ID=<key>
 export AWS_SECRET_ACCESS_KEY=<secret>
 ```
 
-The parameter `--endpoint-url https://s3.eidf.ac.uk` must always be set when calling a command.
+The parameter `--endpoint-url https://s3.eidf.ac.uk` must always be set when calling a command. Alternatively, you can set the default in `~/.aws/config` as follows:
+
+Config file:
+
+```ini
+[default]
+endpoint_url=https://s3.eidf.ac.uk
+```
+or, as an environment variable:
+
+```bash
+export AWS_ENDPOINT_URL_S3=https://s3.eidf.ac.uk
+```
 
 ### Commands
 
